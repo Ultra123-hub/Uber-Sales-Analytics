@@ -115,3 +115,4 @@ df['Year'] = df['Date'].dt.year
    
 ![](booking_status.png)
 
+It can be observed that a huge portion of the orders were completed, followed by ones cancelled by the driver.
