@@ -34,9 +34,7 @@ Before the commencement of the analysis, the data was examined by checking the s
 the exploration revealed that the dataset has about 150,000 rows, whereas certain fields like `Avg VTAT`	(10500), `Avg CTAT`	(48000), `Cancelled Rides by Customer`	(139500), `Reason for cancelling by Customer`	(139500), `Cancelled Rides by Driver`	(123000), `Driver Cancellation Reason`	(123000), `Incomplete Rides`	(141000), `Incomplete Rides Reason`	(141000), `Booking Value`	(48000), `Ride Distance`	(48000), `Driver Ratings`	(57000), `Customer Rating`	(57000), `Payment Method`	(48000) have missing entries.
 
 ## Summary Statistics
-
-
-
+![summary statistics](summary_statistics.png)
 
 
 
