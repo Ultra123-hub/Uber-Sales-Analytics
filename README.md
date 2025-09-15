@@ -41,6 +41,9 @@ the exploration revealed that the dataset has about 150,000 rows, whereas certai
 
 
 ## Checks for outliers
+![](box_plot.png)
+
+It can be observed that the booking value had so much outliers, but will be left since we're not building a predictive model and won't impact our analysis.
 
 ## Summary Statistics
 ![summary statistics](summary_statistics.png)
