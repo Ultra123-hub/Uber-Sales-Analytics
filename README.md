@@ -44,7 +44,7 @@ the exploration revealed that the dataset has about 150,000 rows, whereas certai
 
 ## Data Preprocessing
 The data had to be adequately prepared before moving ahead with our analysis. Therefore, I
-* Handled the missing values:
+* Removed data fields with too many missing values outrightly:
   
 ```python
 # Dropping off data fields with so much missing values
@@ -52,4 +52,46 @@ df.drop(["Cancelled Rides by Customer","Reason for cancelling by Customer","Canc
 ```
 
 
+* Replaced missing values in other numerical fields with the median:
 
+```python
+# replacing the missing avg vtat with the median
+df['Avg VTAT'].fillna(df['Avg VTAT'].median(),inplace=True)
+
+
+# replacing the missing avg ctat with the median
+df['Avg CTAT'].fillna(df['Avg CTAT'].median(),inplace=True)
+
+# replacing the missing booking value with the median
+df['Booking Value'].fillna(df['Booking Value'].median(),inplace=True)
+
+# replacing the missing Customer rating with the median
+df['Customer Rating'].fillna(df['Customer Rating'].median(),inplace=True)
+
+# replacing the missing Driver Ratings with the median
+df['Driver Ratings'].fillna(df['Driver Ratings'].median(),inplace=True)
+
+# replacing the missing Rides Distance with the median
+df['Ride Distance'].fillna(df['Ride Distance'].median(),inplace=True)
+```
+
+* Replaced missing values in the rest of the categorical fields with the mode
+
+```python
+# replacing the missing payment method with the mode
+df['Payment Method'] = df['Payment Method'].fillna(df['Payment Method'].mode()[0])
+```
+
+## Converting the Date Field into a Proper Data Type
+
+```python
+# converting the date column to a proper date data
+df['Date'] = pd.to_datetime(df['Date'])
+
+# extract day from date
+df['Day'] = df['Date'].dt.day
+# extracting month from date
+df['Month'] = df['Date'].dt.month
+# extract year from date
+df['Year'] = df['Date'].dt.year
+```
