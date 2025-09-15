@@ -29,9 +29,18 @@ warnings.filterwarnings('ignore')
 df = pd.read_csv("/content/drive/MyDrive/Colab Notebooks/UBER ANALYTICS/ncr_ride_bookings.csv")
 ```
 
+
 ## Data Exploration
+### Data Snapshot
+![](data_head.png)
+
 Before the commencement of the analysis, the data was examined by checking the shape of the data, the data types, and the missing values. The results of 
 the exploration revealed that the dataset has about 150,000 rows, whereas certain fields like `Avg VTAT`	(10500), `Avg CTAT`	(48000), `Cancelled Rides by Customer`	(139500), `Reason for cancelling by Customer`	(139500), `Cancelled Rides by Driver`	(123000), `Driver Cancellation Reason`	(123000), `Incomplete Rides`	(141000), `Incomplete Rides Reason`	(141000), `Booking Value`	(48000), `Ride Distance`	(48000), `Driver Ratings`	(57000), `Customer Rating`	(57000), `Payment Method`	(48000) have missing entries.
+
+
+
+
+## Checks for outliers
 
 ## Summary Statistics
 ![summary statistics](summary_statistics.png)
@@ -41,6 +50,8 @@ the exploration revealed that the dataset has about 150,000 rows, whereas certai
 
 
 ## Data Preprocessing
+
+
 The data had to be adequately prepared before moving ahead with our analysis. Therefore, I
 * Removed data fields with too many missing values outrightly:
   
