@@ -29,6 +29,8 @@ warnings.filterwarnings('ignore')
 df = pd.read_csv("/content/drive/MyDrive/Colab Notebooks/UBER ANALYTICS/ncr_ride_bookings.csv")
 ```
 
-
+## Data Exploration
+Before the commencement of the analysis, the data was examined by checking the shape of the data, the data types, and the missing values. The results of 
+the exploration revealed that the dataset has about 150,000 rows. Certain data fields like `<Avg VTAT>`,
 
 
