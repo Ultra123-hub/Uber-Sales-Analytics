@@ -148,3 +148,4 @@ print(f"Number of customers with rating below 4: {below_4} ({percentage_below_4:
 ![](customersss.png)
 
 
+Also, it can be inferred that the average customer rating is 4.44.
