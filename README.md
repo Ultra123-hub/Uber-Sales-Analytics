@@ -151,23 +151,18 @@ print(f"Number of customers with rating below 4: {below_4} ({percentage_below_4:
 Also, it can be inferred that the average customer rating is 4.44.
 
 ### 3. Distribution of Vehicle Type
-
+![](vehicle_type)
 
 
 
 ### 3. Booking Value by Vehicle Type
+![](booking_value_by_vehicle_type)
 
 
 
 ### 4. Payment by Credit Card Method
+![](booking_value_by_payment)
 
-```python
-booking_value.plot(kind = 'bar', color = 'green')
-plt.xticks(rotation = 45)
-plt.yticks(rotation = 45)
-plt.xlabel('Vehicle Type')
-plt.ylabel('Booking Value')
-plt.title('Booking Value by Vehicle Type')
-```
+
 
 
