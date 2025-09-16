@@ -140,4 +140,8 @@ print(f"Number of customers with rating below 4: {below_4} ({percentage_below_4:
 
 ![](pie.png)
 
+![](customer_rating.png)
+
+
+
 
