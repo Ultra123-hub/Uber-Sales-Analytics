@@ -111,7 +111,7 @@ df['Year'] = df['Date'].dt.year
 
 
 ## Business Insights
-1. What is the pattern of the customers' bookings?
+### 1. What is the pattern of the customers' bookings?
 
 ```python
 # finding the percentage of each booking status
@@ -124,7 +124,7 @@ It can be observed that a huge portion of the **orders were completed (62.0%)**,
 the ones cancelled by the customer (7.0%) and some others that were incomplete (6.0%). This suggests that a cummulative of 38% of the orders went down drain.
 
 
-2. What does the customer rating say about Uber Operations?
+### 2. What does the customer rating say about Uber Operations?
 
 ```python
 above_4 = df[df['Customer Rating'] >= 4]['Customer Rating'].count()
@@ -149,3 +149,25 @@ print(f"Number of customers with rating below 4: {below_4} ({percentage_below_4:
 
 
 Also, it can be inferred that the average customer rating is 4.44.
+
+### 3. Distribution of Vehicle Type
+
+
+
+
+### 3. Booking Value by Vehicle Type
+
+
+
+### 4. Payment by Credit Card Method
+
+```python
+booking_value.plot(kind = 'bar', color = 'green')
+plt.xticks(rotation = 45)
+plt.yticks(rotation = 45)
+plt.xlabel('Vehicle Type')
+plt.ylabel('Booking Value')
+plt.title('Booking Value by Vehicle Type')
+```
+
+
