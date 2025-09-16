@@ -120,7 +120,7 @@ df['Booking Status'].value_counts(normalize=True) * 100
    
 ![](booking_status.png)
 
-It can be observed that a huge portion of the orders were completed (62.0%), followed by ones cancelled by the driver (18.0%), also instances of **No Driver Found** (7.0%),
+It can be observed that a huge portion of the **orders were completed (62.0%)**, followed by ones **cancelled by the driver (18.0%)**, also instances of **No Driver Found** (7.0%),
 the ones cancelled by the customer (7.0%) and some others that were incomplete (6.0%). This suggests that a cummulative of 38% of the orders went down drain.
 
 2. What does the customer rating say about the uber operations?
@@ -137,6 +137,5 @@ percentage_below_4 = (below_4 / total_ratings) * 100 if total_ratings > 0 else 0
 print(f"Number of customers with rating 4 and above: {above_4} ({percentage_above_4:.2f}%)")
 print(f"Number of customers with rating below 4: {below_4} ({percentage_below_4:.2f}%)")
 ```
-
 
 
