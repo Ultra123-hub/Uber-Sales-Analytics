@@ -138,4 +138,6 @@ print(f"Number of customers with rating 4 and above: {above_4} ({percentage_abov
 print(f"Number of customers with rating below 4: {below_4} ({percentage_below_4:.2f}%)")
 ```
 
+![](pie.png)
+
 
