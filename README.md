@@ -153,15 +153,18 @@ Also, it can be inferred that the average customer rating is 4.44.
 ### 3. Distribution of Vehicle Type
 ![](vehicle_type.png)
 
-
+It can be observed that Auto brands have the largest market operations in the Uber business followed by Go Mini and Go Sedan.
 
 ### 3. Booking Value by Vehicle Type
 ![](booking_value_by_vehicle_type.png)
 
+However it can be gleaned that Auto brands have the highest booking value, followed by Bike and Go Mini. Despite Go Sedan having higher number of vehicles around, its booking value only amounts to $13,022,441.0
 
 
 ### 4. Payment by Credit Card Method
 ![](booking_value_by_payment.png)
+
+It can be observed that about 60% of the total payments received were through Unified Payment Systems, followed by payment in cash (17.9%) and Credit card (7.2%).
 
 
 
